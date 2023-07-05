@@ -1,0 +1,18 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+}
+ul li a {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-decoration: none;
+  padding-right: 1.5rem;
+}
+@media (max-width: 1000px) {
+  ul li a {
+    padding-right: 1rem;
+  }
+}

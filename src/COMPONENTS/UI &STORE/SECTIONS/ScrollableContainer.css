@@ -1,0 +1,26 @@
+.scrollable-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.scrollable-content {
+  display: flex;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  margin: 0 5px;
+}

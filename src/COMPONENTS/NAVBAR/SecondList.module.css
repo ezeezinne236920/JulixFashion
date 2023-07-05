@@ -1,0 +1,9 @@
+/* .secondlists {
+  display: flex;
+  justify-content: space-around;
+}*/
+select {
+  border: none;
+  border-radius: 13%;
+  margin-right: 2rem;
+}

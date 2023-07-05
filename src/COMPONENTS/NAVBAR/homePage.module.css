@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Domine;
+  src: url("../ASSETS/font_Family/Domine-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: JimNightshade;
+  src: url("../ASSETS/font_Family/JimNightshade-Regular.ttf");
+}
+@font-face {
+  font-family: Playfair;
+  src: url("../ASSETS/font_Family/PlayfairDisplaySC-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+video {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* height: ; */
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.bgcontainer {
+  /* height: 80vh; */
+  /* min-height: 100vh; */
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Domine;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  overflow: hidden;
+  transition: all ease 3s linear;
+  /* z-index: 1; */
+  
+}
+.bgcontainer p {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  font-size: 3rem;
+  font-family: Domine;
+}
+.mobilehomepage {
+  display: none;
+}
+/* nav:hover {
+  background: white;
+  color: black;
+  transition: all ease 3s linear;
+  margin: 4rem;
+
+  padding: 3rem;
+}
+nav:hover a {
+  background: white;
+  color: black;
+  transition: all ease 3s linear
+} */
+@media (max-width: 1050px) {
+  .bgcontainer p {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    font-size: 2.5rem;
+    font-family: Playfair;
+    /* color: #000; */
+  }
+}
+@media (max-width: 770px) {
+  .mobilehomepage {
+    display: block;
+  }
+  .bgcontainer {
+    display: none;
+  }
+  .menuicon {
+    font-size: 1.3rem;
+  }
+  .mobilehomepage p {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+  }
+  .mobilehomepage span {
+    font-size: 1.7rem;
+    font-family: JimNightshade;
+  }
+}
+@media (max-width: 440px) {
+  .mobilehomepage p {
+    top: 7%;
+  }
+  .mobilehomepage span {
+    font-size: 1rem;
+  }
+}
